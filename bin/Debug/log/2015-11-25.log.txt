@@ -1,0 +1,8 @@
+2015/11/25 9:45:46 DishesObj GetLocalDishesObjs [ERROR] : “Kernel.SQLiteHelper”的类型初始值设定项引发异常。
+2015/11/25 9:45:46 DishesObj GetLocalDishesObjs [ERROR] :    在 Kernel.SQLiteHelper.QueryDataTable(String commandText)
+   在 Kernel.CacheHelper.GetXml(String p_Id) 位置 E:\客户端\Kernel\CacheHelper.cs:行号 40
+   在 WpfControls.DishesObj.GetLocalDishesObjs(String p_ConsumptionId) 位置 E:\客户端\WpfControls\DishesObj.cs:行号 277
+2015/11/25 9:45:47 DishesObj GetLocalDishesObjs [ERROR] : “Kernel.SQLiteHelper”的类型初始值设定项引发异常。
+2015/11/25 9:45:47 DishesObj GetLocalDishesObjs [ERROR] :    在 Kernel.SQLiteHelper.QueryDataTable(String commandText)
+   在 Kernel.CacheHelper.GetXml(String p_Id) 位置 E:\客户端\Kernel\CacheHelper.cs:行号 40
+   在 WpfControls.DishesObj.GetLocalDishesObjs(String p_ConsumptionId) 位置 E:\客户端\WpfControls\DishesObj.cs:行号 277

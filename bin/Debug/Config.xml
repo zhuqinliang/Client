@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <system>
+    <key name="LogLevel" value="3" />
+    <key name="MainUrlIp" value="192.168.1.14" />
+    <key name="MainUrlPort" value="8080" />
+    <!--菜品-->
+    <key name="DishesUrl" value="http://192.168.1.100:3000" />
+    <!--库管-->
+    <key name="WarehouseUrl" value="http://192.168.1.100:8088/login.jsp" />
+    <!--报表-->
+    <key name="ReportUrl" value="http://192.168.1.100:3000" />
+    <!--天天100-->
+    <key name="TT100Url" value="http://www.dcai100.com/login" />
+    <key name="LoginUserName" value="005" />
+    <key name="LoginUserPSW" value="123" />
+    <!--是否需要记住密码-->
+    <key name="NeedRemPwd" value="true" />
+    <!--callMode-->
+    <key name="CallMode" value="2" />
+  </system>
+</config>

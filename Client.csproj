@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D0C702D-6600-40EB-9492-07674B3CB62D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>点菜100</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dcai100.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeskControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\项目\DeskControl\DeskControl\bin\Debug\DeskControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DishControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\项目\DishControl\DishControl\bin\Debug\DishControl.dll</HintPath>
+    </Reference>
+    <Reference Include="FloorControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\项目\FloorControl\FloorControl\bin\Debug\FloorControl.dll</HintPath>
+    </Reference>
+    <Reference Include="LineControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\项目\LineControl\LineControl\bin\Debug\LineControl.dll</HintPath>
+    </Reference>
+    <Reference Include="PanelControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\项目\PanelControl\PanelControl\bin\Debug\PanelControl.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TreeControl">
+      <HintPath>..\..\TreeControl\TreeControl\bin\Debug\TreeControl.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WebKit.Interop, Version=533.0.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=MSIL">
+      <HintPath>libs\WebKit.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="WebKitBrowser, Version=0.5.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebKitBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllOrder.Designer.cs">
+      <DependentUpon>AllOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankCard.Designer.cs">
+      <DependentUpon>BankCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashPayment.Designer.cs">
+      <DependentUpon>CashPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeNumber.Designer.cs">
+      <DependentUpon>ChangeNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeTable.Designer.cs">
+      <DependentUpon>ChangeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounterBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounterBalance.Designer.cs">
+      <DependentUpon>CounterBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desk.Designer.cs">
+      <DependentUpon>Desk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="e7\CardIdCreater.cs" />
+    <Compile Include="e7\DeivceE7Impl.cs" />
+    <Compile Include="e7\DeviceAsyncHandler.cs" />
+    <Compile Include="e7\E7Device.cs" />
+    <Compile Include="e7\E7Lib.cs" />
+    <Compile Include="e7\IDeviceTool.cs" />
+    <Compile Include="frmCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashier.Designer.cs">
+      <DependentUpon>frmCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuery.Designer.cs">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReserveDishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReserveDishes.Designer.cs">
+      <DependentUpon>frmReserveDishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedOrder.Designer.cs">
+      <DependentUpon>FixedOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FreeOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FreeOrder.Designer.cs">
+      <DependentUpon>FreeOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaitDialog.Designer.cs">
+      <DependentUpon>frmWaitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebDishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebDishes.Designer.cs">
+      <DependentUpon>frmWebDishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebReport.Designer.cs">
+      <DependentUpon>frmWebReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebTT100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebTT100.Designer.cs">
+      <DependentUpon>frmWebTT100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebWarehouse.Designer.cs">
+      <DependentUpon>frmWebWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ImageButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="controls\ImageButtonEx.designer.cs">
+      <DependentUpon>ImageButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPassWord.Designer.cs">
+      <DependentUpon>InputPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputRetrievalDishesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputRetrievalDishesPanel.Designer.cs">
+      <DependentUpon>InputRetrievalDishesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListJoin.Designer.cs">
+      <DependentUpon>ListJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LockWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LockWindows.Designer.cs">
+      <DependentUpon>LockWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MalingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MalingOrder.Designer.cs">
+      <DependentUpon>MalingOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberCard.Designer.cs">
+      <DependentUpon>MemberCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSystem.Designer.cs">
+      <DependentUpon>MemberSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messagebox.Designer.cs">
+      <DependentUpon>Messagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenTables.designer.cs">
+      <DependentUpon>OpenTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherOrder.Designer.cs">
+      <DependentUpon>OtherOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartOrder.Designer.cs">
+      <DependentUpon>PartOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartOrderChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartOrderChoose.Designer.cs">
+      <DependentUpon>PartOrderChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReasons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentReasons.Designer.cs">
+      <DependentUpon>PaymentReasons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanOrder.Designer.cs">
+      <DependentUpon>PlanOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveList.Designer.cs">
+      <DependentUpon>RemoveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveOrderingDesks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveOrderingDesks.Designer.cs">
+      <DependentUpon>RemoveOrderingDesks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign.Designer.cs">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllOrder.resx">
+      <DependentUpon>AllOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankCard.resx">
+      <DependentUpon>BankCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashPayment.resx">
+      <DependentUpon>CashPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeNumber.resx">
+      <DependentUpon>ChangeNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeTable.resx">
+      <DependentUpon>ChangeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounterBalance.resx">
+      <DependentUpon>CounterBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desk.resx">
+      <DependentUpon>Desk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedOrder.resx">
+      <DependentUpon>FixedOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreeOrder.resx">
+      <DependentUpon>FreeOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCashier.resx">
+      <DependentUpon>frmCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserveDishes.resx">
+      <DependentUpon>frmReserveDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaitDialog.resx">
+      <DependentUpon>frmWaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebDishes.resx">
+      <DependentUpon>frmWebDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebTT100.resx">
+      <DependentUpon>frmWebTT100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebWarehouse.resx">
+      <DependentUpon>frmWebWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPassWord.resx">
+      <DependentUpon>InputPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputRetrievalDishesPanel.resx">
+      <DependentUpon>InputRetrievalDishesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListJoin.resx">
+      <DependentUpon>ListJoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockWindows.resx">
+      <DependentUpon>LockWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MalingOrder.resx">
+      <DependentUpon>MalingOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberCard.resx">
+      <DependentUpon>MemberCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSystem.resx">
+      <DependentUpon>MemberSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messagebox.resx">
+      <DependentUpon>Messagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenTables.resx">
+      <DependentUpon>OpenTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherOrder.resx">
+      <DependentUpon>OtherOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartOrder.resx">
+      <DependentUpon>PartOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartOrderChoose.resx">
+      <DependentUpon>PartOrderChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentReasons.resx">
+      <DependentUpon>PaymentReasons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanOrder.resx">
+      <DependentUpon>PlanOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveList.resx">
+      <DependentUpon>RemoveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveOrderingDesks.resx">
+      <DependentUpon>RemoveOrderingDesks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign.resx">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bin\Debug\CFLite.resources\CFCharacterSetBitmaps.bitmap" />
+    <None Include="bin\Debug\CFLite.resources\CFUniCharPropertyDatabase.data" />
+    <None Include="bin\Debug\CFLite.resources\CFUnicodeData-L.mapping" />
+    <None Include="bin\Debug\CFLite.resources\Info.plist" />
+    <None Include="bin\Debug\Client.vshost.exe.manifest" />
+    <None Include="bin\Debug\E7umf.lib" />
+    <None Include="bin\Debug\JavaScriptCore.resources\Info.plist" />
+    <None Include="bin\Debug\localdb.s3db" />
+    <None Include="bin\Debug\WebKit.resources\certificates\cacert.pem" />
+    <None Include="bin\Debug\WebKit.resources\en.lproj\Localizable.strings" />
+    <None Include="bin\Debug\WebKit.resources\Info.plist" />
+    <None Include="bin\Debug\WebKit.resources\inspector\SourceCSSTokenizer.re2js" />
+    <None Include="bin\Debug\WebKit.resources\inspector\SourceHTMLTokenizer.re2js" />
+    <None Include="bin\Debug\WebKit.resources\inspector\SourceJavaScriptTokenizer.re2js" />
+    <None Include="bin\Debug\WebKit.resources\inspector\WebKit.qrc" />
+    <None Include="bin\Debug\WebKitBrowser.dll.manifest" />
+    <None Include="bin\Debug\点菜100.exe.config" />
+    <None Include="bin\Debug\点菜100.vshost.exe.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\楼层选中.png" />
+    <None Include="Resources\楼层未选中.png" />
+    <None Include="Resources\圆角矩形 41.png" />
+    <None Include="Resources\btn_readcard_pre.png" />
+    <None Include="Resources\btn_cardpsw1_nor.png" />
+    <None Include="Resources\btn_cardpsw1_pre.png" />
+    <None Include="Resources\btn_cardpsw2_nor.png" />
+    <None Include="Resources\btn_cardpsw2_pre.png" />
+    <None Include="Resources\btn_opencard_nor.png" />
+    <None Include="Resources\btn_opencard_pre.png" />
+    <None Include="Resources\btn_readcard_nor.png" />
+    <Content Include="bin\Debug\E7umf.dll" />
+    <Content Include="bin\Debug\System.Data.SQLite.dll" />
+    <None Include="Resources\WaitInputPSW.png" />
+    <None Include="Resources\WaitReadCard.png" />
+    <None Include="Resources\WaitInitDevice.png" />
+    <None Include="Resources\WriteCardFailed.png" />
+    <Content Include="锁屏1.png" />
+    <Content Include="锁屏2.png" />
+    <None Include="Resources\预定13.png" />
+    <None Include="Resources\预定2.png" />
+    <None Include="Resources\btn-sure1.png" />
+    <None Include="Resources\reserved.png" />
+    <None Include="Resources\dining.png" />
+    <None Include="Resources\state_bg_nor.png" />
+    <None Include="Resources\state_bg_pre.png" />
+    <None Include="Resources\btn_bg_gray.png" />
+    <None Include="Resources\btn_bg_nor.png" />
+    <None Include="Resources\btn_bg_pre.png" />
+    <None Include="Resources\cashier_lefttab_bg_act.png" />
+    <None Include="Resources\cashier_lefttab_bg_nor.jpg" />
+    <None Include="Resources\cashier_righttab_bg_act.png" />
+    <None Include="Resources\cashier_righttab_bg_nor.png" />
+    <None Include="Resources\search_item_nor.png" />
+    <None Include="Resources\search_item_pre.png" />
+    <None Include="Resources\定额打折.png" />
+    <None Include="Resources\定额打折2.png" />
+    <None Include="Resources\定额打折3.png" />
+    <None Include="Resources\会员卡.png" />
+    <None Include="Resources\会员卡2.png" />
+    <None Include="Resources\会员卡3.png" />
+    <None Include="Resources\免单.png" />
+    <None Include="Resources\免单2.png" />
+    <None Include="Resources\免单3.png" />
+    <None Include="Resources\其他.png" />
+    <None Include="Resources\其他2.png" />
+    <None Include="Resources\其他3.png" />
+    <None Include="Resources\取消.png" />
+    <None Include="Resources\取消2.png" />
+    <None Include="Resources\picLogo.Image.png" />
+    <Content Include="bin\Debug\AlphaBlendTextBox.dll" />
+    <Content Include="bin\Debug\Business.dll" />
+    <Content Include="bin\Debug\Business.pdb" />
+    <Content Include="bin\Debug\CFLite.dll" />
+    <Content Include="bin\Debug\Config.xml" />
+    <Content Include="bin\Debug\DeskControl.dll" />
+    <Content Include="bin\Debug\DeskControl.pdb" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar2.dll" />
+    <Content Include="bin\Debug\DishControl.dll" />
+    <Content Include="bin\Debug\DishControl.pdb" />
+    <Content Include="bin\Debug\FloorControl.dll" />
+    <Content Include="bin\Debug\FloorControl.pdb" />
+    <Content Include="bin\Debug\icudt40.dll" />
+    <Content Include="bin\Debug\icuin40.dll" />
+    <Content Include="bin\Debug\icuuc40.dll" />
+    <Content Include="bin\Debug\JavaScriptCore.dll" />
+    <Content Include="bin\Debug\Kernel.dll" />
+    <Content Include="bin\Debug\Kernel.pdb" />
+    <Content Include="bin\Debug\libcurl.dll" />
+    <Content Include="bin\Debug\libeay32.dll" />
+    <Content Include="bin\Debug\libexslt.dll" />
+    <Content Include="bin\Debug\libxml2.dll" />
+    <Content Include="bin\Debug\libxslt.dll" />
+    <Content Include="bin\Debug\LineControl.dll" />
+    <Content Include="bin\Debug\LineControl.pdb" />
+    <Content Include="bin\Debug\objc.dll" />
+    <Content Include="bin\Debug\PanelControl.dll" />
+    <Content Include="bin\Debug\PanelControl.pdb" />
+    <Content Include="bin\Debug\pthreadVC2.dll" />
+    <Content Include="bin\Debug\SQLite3.dll" />
+    <Content Include="bin\Debug\ssleay32.dll" />
+    <Content Include="bin\Debug\TreeControl.dll" />
+    <Content Include="bin\Debug\WebKit.dll" />
+    <Content Include="bin\Debug\WebKit.Interop.dll" />
+    <Content Include="bin\Debug\WebKit.resources\en.lproj\localizedStrings.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\AbstractTimelinePanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ApplicationCacheItemsView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\AuditCategories.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\AuditLauncherView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\AuditResultView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\AuditRules.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\audits.css" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\AuditsPanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\BottomUpProfileDataGridTree.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\BreakpointManager.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\BreakpointsSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Callback.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\CallStackSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ChangesView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Checkbox.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Color.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ConsolePanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ConsoleView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ContextMenu.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\CookieItemsView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\CSSCompletions.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\CSSStyleModel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Database.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DatabaseQueryView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DatabaseTableView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DataGrid.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DOMAgent.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DOMStorage.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DOMStorageItemsView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\DOMSyntaxHighlighter.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Drawer.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ElementsPanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ElementsTreeOutline.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\EventListenersSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\FontView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\HAREntry.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\helpScreen.css" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\HelpScreen.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\applicationCache.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\auditsIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\back.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\breakpointBorder.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\breakpointConditionalBorder.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\breakpointConditionalCounterBorder.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\breakpointCounterBorder.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\breakpointsActivateButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\breakpointsDeactivateButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\checker.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\clearConsoleButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\closeButtons.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\consoleButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\consoleIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\cookie.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\database.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\databaseTable.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\debuggerContinue.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\debuggerPause.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\debuggerStepInto.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\debuggerStepOut.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\debuggerStepOver.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallDown.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallDownBlack.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallDownWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallRight.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallRightBlack.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallRightDown.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallRightDownBlack.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallRightDownWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\disclosureTriangleSmallRightWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\dockButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\elementsIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\enableOutlineButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\enableSolidButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\errorIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\errorMediumIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\errorRedDot.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\excludeButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\focusButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\forward.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\gearButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\glossyHeader.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\glossyHeaderPressed.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\glossyHeaderSelected.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\glossyHeaderSelectedPressed.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\goArrow.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\graphLabelCalloutLeft.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\graphLabelCalloutRight.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\grayConnectorPoint.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\largerResourcesButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\localStorage.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\nodeSearchButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\paneBottomGrow.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\paneBottomGrowActive.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\paneGrowHandleLine.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\paneSettingsButtons.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\pauseOnExceptionButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\percentButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\popoverArrows.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\popoverBackground.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\profileGroupIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\profileIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\profilesIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\profileSmallIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\profilesSilhouette.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\programCounterBorder.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\radioDot.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\recordButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\recordToggledButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\reloadButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourceCSSIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourceDocumentIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourceDocumentIconSmall.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourceJSIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourcePlainIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourcePlainIconSmall.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourcesIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourcesSilhouette.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourcesSizeGraphIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\resourcesTimeGraphIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\scriptsIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\scriptsSilhouette.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\searchSmallBlue.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\searchSmallBrightBlue.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\searchSmallGray.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\searchSmallWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\segment.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\segmentEnd.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\segmentHover.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\segmentHoverEnd.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\segmentSelected.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\segmentSelectedEnd.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\sessionStorage.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\spinner.gif" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\splitviewDimple.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\splitviewDividerBackground.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarBackground.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarBottomBackground.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarButtons.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarMenuButton.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarMenuButtonSelected.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarResizerHorizontal.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\statusbarResizerVertical.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\storageIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\successGreenDot.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\thumbActiveHoriz.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\thumbActiveVert.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\thumbHoriz.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\thumbHoverHoriz.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\thumbHoverVert.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\thumbVert.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarBlue.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarGray.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarGreen.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarOrange.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarPurple.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarRed.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineBarYellow.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineCheckmarks.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineDots.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillBlue.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillGray.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillGreen.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillOrange.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillPurple.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillRed.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineHollowPillYellow.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelineIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillBlue.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillGray.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillGreen.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillOrange.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillPurple.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillRed.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\timelinePillYellow.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\toolbarItemSelected.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\trackHoriz.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\trackVert.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\treeDownTriangleBlack.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\treeDownTriangleWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\treeRightTriangleBlack.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\treeRightTriangleWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\treeUpTriangleBlack.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\treeUpTriangleWhite.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\undockButtonGlyph.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\userInputIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\userInputPreviousIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\userInputResultIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\warningIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\warningMediumIcon.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\warningOrangeDot.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\warningsErrors.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Images\whiteConnectorPoint.png" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ImageView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\InjectedFakeWorker.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\InjectedScript.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\InjectedScriptAccess.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\inspector.css" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\inspector.html" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\inspector.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\InspectorBackendStub.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\InspectorFrontendHostStub.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\inspectorSyntaxHighlight.css" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\KeyboardShortcut.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\MetricsSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Object.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ObjectPropertiesSection.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ObjectProxy.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Panel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\PanelEnablerView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Placard.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\popover.css" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Popover.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ProfileDataGridTree.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ProfilesPanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ProfileView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\PropertiesSection.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\PropertiesSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Resource.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ResourceCategory.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ResourcesPanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ResourceView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ScopeChainSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Script.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ScriptsPanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ScriptView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Section.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\Settings.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\ShortcutsHelp.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SidebarTreeElement.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SourceCSSTokenizer.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SourceFrame.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SourceHTMLTokenizer.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SourceJavaScriptTokenizer.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SourceTokenizer.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SourceView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\StatusBarButton.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\StoragePanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\StylesSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\SummaryBar.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TabbedPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TestController.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TextEditorHighlighter.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TextEditorModel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TextPrompt.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\textViewer.css" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TextViewer.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TimelineAgent.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TimelineGrid.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TimelineOverviewPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TimelinePanel.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\TopDownProfileDataGridTree.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\treeoutline.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\utilities.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\View.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\WatchExpressionsSidebarPane.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\WelcomeView.js" />
+    <Content Include="bin\Debug\WebKit.resources\inspector\WorkersSidebarPane.js" />
+    <Content Include="bin\Debug\WebKitBrowser.dll" />
+    <Content Include="bin\Debug\WebKitBrowserTest.exe" />
+    <Content Include="bin\Debug\WpfControls.dll" />
+    <Content Include="bin\Debug\WpfControls.pdb" />
+    <Content Include="bin\Debug\点菜100.exe" />
+    <Content Include="bin\Debug\点菜100.pdb" />
+    <Content Include="bin\Debug\点菜100.vshost.exe" />
+    <Content Include="Resources\idle.png" />
+    <None Include="Resources\lock.png" />
+    <Content Include="Resources\loginmouseenter.png" />
+    <Content Include="Resources\loginmouseleave.png" />
+    <Content Include="Resources\login_password_nor.png" />
+    <Content Include="Resources\login_password_sel.png" />
+    <Content Include="Resources\ordering.png" />
+    <Content Include="Resources\开台1.png" />
+    <None Include="Resources\开台11.png" />
+    <None Include="Resources\开台12.png" />
+    <None Include="Resources\开台13.png" />
+    <Content Include="Resources\开台2.png" />
+    <None Include="Resources\打印交接单2.png" />
+    <None Include="Resources\打印交接单.png" />
+    <None Include="Resources\打印对账单.png" />
+    <None Include="Resources\打印对账单2.png" />
+    <None Include="Resources\方案打折.png" />
+    <None Include="Resources\方案打折2.png" />
+    <None Include="Resources\方案打折3.png" />
+    <None Include="Resources\摸零.png" />
+    <None Include="Resources\抹零2.png" />
+    <None Include="Resources\抹零3.png" />
+    <None Include="Resources\整单打折.png" />
+    <None Include="Resources\整单打折2.png" />
+    <None Include="Resources\整单打折3.png" />
+    <Content Include="Resources\点菜1.png" />
+    <None Include="Resources\点菜11.png" />
+    <None Include="Resources\点菜12.png" />
+    <None Include="Resources\确认交接.png" />
+    <None Include="Resources\确认交接2.png" />
+    <None Include="Resources\签单.png" />
+    <None Include="Resources\签单2.png" />
+    <None Include="Resources\签单3.png" />
+    <None Include="Resources\现金支付.png" />
+    <None Include="Resources\现金支付2.png" />
+    <None Include="Resources\现金支付3.png" />
+    <None Include="Resources\确定3.png" />
+    <None Include="Resources\确定2.png" />
+    <None Include="Resources\确定.png" />
+    <None Include="Resources\点菜13.png" />
+    <Content Include="Resources\结账1.png" />
+    <None Include="Resources\结账11.png" />
+    <None Include="Resources\结账12.png" />
+    <None Include="Resources\结账13.png" />
+    <Content Include="Resources\结账2.png" />
+    <None Include="Resources\部分打折.png" />
+    <None Include="Resources\部分打折2.png" />
+    <None Include="Resources\部分打折3.png" />
+    <None Include="Resources\银联卡.png" />
+    <None Include="Resources\银联卡2.png" />
+    <None Include="Resources\银联卡3.png" />
+    <None Include="Resources\锁屏2.png" />
+    <None Include="Resources\锁屏1.png" />
+    <Content Include="Resources\预定1.png" />
+    <None Include="Resources\预定12.png" />
+    <None Include="Resources\预定11.png" />
+    <None Include="Resources\交接班.png" />
+    <None Include="Resources\会员.png" />
+    <None Include="Resources\会员2.png" />
+    <None Include="Resources\交接班2.png" />
+    <None Include="Resources\历史查询.png" />
+    <None Include="Resources\库管.png" />
+    <None Include="Resources\开桌.png" />
+    <None Include="Resources\报表.png" />
+    <None Include="Resources\报表2.png" />
+    <None Include="Resources\开桌2.png" />
+    <None Include="Resources\库管2.png" />
+    <None Include="Resources\历史查询2.png" />
+    <None Include="Resources\收银.png" />
+    <None Include="Resources\点菜.png" />
+    <None Include="Resources\点菜2.png" />
+    <None Include="Resources\点菜100.png" />
+    <None Include="Resources\菜品.png" />
+    <None Include="Resources\菜品2.png" />
+    <None Include="Resources\点菜200.png" />
+    <None Include="Resources\设置1.png" />
+    <None Include="Resources\设置2.png" />
+    <None Include="Resources\收银2.png" />
+    <None Include="Resources\预定.png" />
+    <None Include="Resources\组-1.png" />
+    <None Include="Resources\组 3.png" />
+    <None Include="Resources\设置.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\圆角矩形 4.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\key_stroke.png" />
+    <None Include="Resources\btn-sure.png" />
+    <None Include="Resources\btn-Cancel.png" />
+    <None Include="Resources\down-pre.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\history_log_nor.png" />
+    <None Include="Resources\date_pop_bg.9.png" />
+    <None Include="Resources\cashier_close_nor.png" />
+    <None Include="Resources\cashier_close_pre.png" />
+    <Content Include="dcai100.ico" />
+    <Content Include="Resources\logo2.png" />
+    <Content Include="Resources\客户端_03.png" />
+    <Content Include="Resources\客户端_05.png" />
+    <Content Include="Resources\客户端_07.png" />
+    <Content Include="Resources\客户端_09.png" />
+    <Content Include="Resources\客户端_10.jpg" />
+    <Content Include="Resources\客户端_12.png" />
+    <Content Include="Resources\客户端_13.png" />
+    <Content Include="Resources\客户端_15.png" />
+    <Content Include="Resources\客户端_17.png" />
+    <Content Include="Resources\客户端_19.png" />
+    <Content Include="Resources\客户端_57.png" />
+    <Content Include="Resources\客户端图标.png" />
+    <Content Include="Resources\点菜中.png" />
+    <Content Include="Resources\点菜中1.png" />
+    <Content Include="Resources\用餐中.png" />
+    <Content Include="Resources\用餐中1.png" />
+    <None Include="Resources\登录btn.png" />
+    <Content Include="Resources\空闲.png" />
+    <Content Include="Resources\空闲1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{9CBC79A5-47AB-4EA5-9D5E-1F006C1193F4}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kernel\Kernel.csproj">
+      <Project>{F1EB4163-5187-4AEB-B602-611249307AC0}</Project>
+      <Name>Kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfControls\WpfControls.csproj">
+      <Project>{0917B070-B3BF-4190-916D-ECE49CC781B1}</Project>
+      <Name>WpfControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\libs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
